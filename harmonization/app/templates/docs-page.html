@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CLH | Docs</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../static/atom.png">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="../static/assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="../static/assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="../static/assets/css/theme.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../static/plugin.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<style>
+		.navbar {
+			z-index: 1000;
+		}
+	</style>
+
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="navbar navbar-dark bg-dark box-shadow">
+			<div class="container d-flex justify-content-between">
+				<a href="{% url 'home' %}" class="navbar-brand d-flex align-items-center">
+					<strong>Harmonization</strong>
+				</a>
+				<div class="icon" style="display: flex; justify-content: space-around; text-align: center;">
+					<a href=""><img width="26" height="26"
+							src="https://img.icons8.com/ios-filled/26/FFFFFF/submit-document.png"
+							alt="submit-document" /></a>
+					<a href=""><img width="30" height="30" style="margin-left: 10px;"
+							src="https://img.icons8.com/glyph-neue/30/FFFFFF/github.png" alt="github" /></a>
+				</div>
+			</div>
+		</div>
+	</header><!--//header-->
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Uses</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Zip file Format</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Normalization</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">TG263 Nomenclature</a></li>
+
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Clone The Repo</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Setup Development</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Setup Production</a></li>
+				</ul>
+
+			</nav><!--//docs-nav-->
+		</div><!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Uses<span class="docs-time">Last updated: 15-09-2023</span>
+						</h1>
+						<section class="docs-intro">
+							<p>Contour label RTSTRUCT ROI Name normalization and harmonization are vital in medical
+								imaging and radiation therapy.
+								They ensure consistency and interoperability across different healthcare systems and
+								facilities.
+								Normalization standardizes naming conventions for anatomical regions and structures,
+								reducing errors and improving patient safety.
+								Harmonization facilitates data exchange and research by aligning ROI names with widely
+								accepted terminologies like SNOMED CT or RadLex,
+								promoting seamless collaboration among healthcare professionals and enabling data-driven
+								insights. These practices enhance the quality of patient care,
+								streamline treatment planning, and support research efforts, ultimately advancing the
+								field of radiation therapy and medical imaging.</p>
+						</section><!--//docs-intro-->
+
+						<h5>Github Code Example:</h5>
+						<p>You can <a class="theme-link" href="https://gist.github.com/" target="_blank">embed your code
+								snippets using Github gists</a></p>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/xriley/fce6cf71edfd2dadc7919eb9c98f3f17.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
+
+						<h5>Highlight.js Example:</h5>
+						<p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js"
+								target="_blank">embed your code snippets using highlight.js</a> It supports <a
+								class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185
+								languages and 89 styles</a>.</p>
+						<p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/"
+								target="_blank">Atom One Dark</a> style for the code blocks:
+							<br><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code>
+						</p>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">[
+  {
+    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
+    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>],
+    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
+  },
+  {
+    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"oranges"</span>,
+    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>],
+    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
+  }
+]
+
+
+</code></pre>
+						</div><!--//docs-code-block-->
+
+
+					</header>
+
+
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Zip File Format</h2>
+						<p>ROI Name Harmonization is applied based on the existing ROI Name in the RTSTRUCT.
+							It is preferable to create a ZIP file containing the planning CT along with the RTSTRUCT for
+							streamlined data management.<br>
+
+							Contour Label Harmonization applications are performed for both single and multiple patient
+							information,
+							and the results are presented in a ZIP format for convenient access and organization of
+							medical data..</p>
+						<h5 class="mt-5">Single Patients Images in a Zip File:</h5>
+
+
+						<h5 class="mt-5">Multiple Patients Images in a Zip File:</h5>
+
+						<p>The example below uses the <i class="fas fa-external-link-alt"></i> <a class="theme-link"
+								href="https://github.com/andreknieriem/simplelightbox" target="_blank">simplelightbox
+								plugin</a>. </p>
+
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/coderpro-home.png"><img
+										class="figure-img img-fluid shadow rounded"
+										src="assets/images/coderpro-home-thumb.png" alt=""
+										title="CoderPro Home Page" /></a>
+							</div>
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/coderpro-features.png"><img
+										class="figure-img img-fluid shadow rounded"
+										src="assets/images/coderpro-features-thumb.png" alt=""
+										title="CoderPro Features Page" /></a>
+							</div><!--//col-->
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/coderpro-pricing.png"><img
+										class="figure-img img-fluid shadow rounded"
+										src="assets/images/coderpro-pricing-thumb.png" alt=""
+										title="CoderPro Pricing Page" /></a>
+							</div><!--//col-->
+
+						</div><!--//gallery-->
+
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Normalization</h2>
+						<p>ROI Name Normalization adheres to specific rules for consistency:
+						<div class="table-responsive my-4">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th class="theme-bg-light"><a class="theme-link" href="#">Step 1</a></th>
+										<td>Converts all characters to lowercase.</td>
+									</tr>
+									<tr>
+										<th class="theme-bg-light"><a class="theme-link" href="#">Step 2</a></th>
+										<td>OTrims leading/trailing spaces.</td>
+									</tr>
+
+									<tr>
+										<th class="theme-bg-light"><a class="theme-link" href="#">Step 3</a></th>
+										<td>Replaces special characters with spaces.</td>
+									</tr>
+
+									<tr>
+										<th class="theme-bg-light"><a class="theme-link" href="#">Step 4</a></th>
+										<td>Condenses consecutive spaces/special characters.</td>
+									</tr>
+									<tr>
+										<th class="theme-bg-light"><a class="theme-link" href="#">Step 5</a></th>
+										<td>Converts spaces to underscores, except the trailing one.</td>
+									</tr>
+									<tr>
+										<th class="theme-bg-light"><a class="theme-link" href="#">Step 6</a></th>
+										<td>Capitalizes the first letter after each space. These steps ensure uniform,
+											clean, and structured.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table-responsive-->
+
+						<h5>Example:</h5>
+						<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">ROI Name</th>
+										<th scope="col">Normalised Name</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Right Femur</td>
+										<td>Right_Femur</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>RIGHT FEMUR</td>
+										<td>Right_Femur</td>
+									</tr>
+									<tr>
+										<th scope="row">1</th>
+										<td>Right_Femur</td>
+										<td>Right_Femur</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table-responsive-->
+
+
+						<section class="docs-section" id="item-1-4">
+							<h2 class="section-heading">TG263 Nomenclature</h2>
+							<p>TG-263 is a nomenclature and naming standardization effort in radiation oncology.
+								It's primarily focused on standardizing the naming and labeling of structures in
+								radiotherapy and medical imaging, particularly
+								within the context of DICOM (Digital Imaging and Communications in Medicine) files and
+								RT (Radiation Therapy) datasets.<br>
+
+								The aim of TG-263 is to establish consistent and universally understood naming
+								conventions for anatomical structures,
+								regions of interest (ROIs), and contours used in treatment planning, dose calculations,
+								and medical image analysis.
+								This standardization enhances patient safety, facilitates data exchange among different
+								healthcare systems,
+								and promotes uniformity in research and clinical practice in the field of radiation
+								oncology. It's important for reducing errors,
+								improving interoperability, and advancing the quality of patient care in radiotherapy.
+							</p> <br>
+
+							For offitial Documentation <a href="https://www.aapm.org/pubs/reports/RPT_263.pdf">TG263
+								docs</a>
+
+						</section>
+
+				</article>
+
+				<article class="docs-article" id="section-2">
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Clone The Repository</h2>
+						<p>Clonning the Repository and setup the Development and Production for Development running 8000 port in a local macine localhost, <br>
+						and in production it used nginx as reverse proxy management and load balanceing and djnago based on docker container through a docker-compose.yml file.</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Setup Development</h2>
+						<script src="https://gist.github.com/tmckol/86e20177b3743a4a39ccbfba7dd68be8.js"></script>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Setup Production</h2>
+						<script src="https://gist.github.com/tmckol/ceda1f5a98edf7e4c261f6d70ea70387.js"></script>
+						
+					</section><!--//section-->
+				</article><!--//docs-article-->
+			</div>
+		</div>
+	</div><!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="../static/assets/plugins/popper.min.js"></script>
+	<script src="../static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="../static/assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="../static/assets/js/highlight-custom.js"></script>
+	<script src="../static/assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="../static/assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="../static/assets/js/docs.js"></script>
+
+</body>
+
+</html>

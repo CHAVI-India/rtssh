@@ -1,0 +1,21 @@
+{% extends "header.html" %}
+
+{% load static %}
+{% block content %}
+<h3>Download file</h3>
+<hr />
+<form action="">
+    <div class="mt-5 mb-5">
+        <div class="form-group">
+            <p style="text-align: center;">{{download_filename}}</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a role="button" class="btn btn-primary" href="{{ download_link }}">Download</a>
+        </div>
+
+    </div>
+    <hr />
+    <a class="btn btn-link" href="{% url 'preprocess' %}" role="button">Preprocess</a>
+    <a class="btn btn-link" href="{% url 'upload' %}" role="button">Upload</a>
+</form>
+{% endblock %}

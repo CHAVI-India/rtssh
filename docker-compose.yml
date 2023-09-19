@@ -1,0 +1,21 @@
+
+
+version: '3'
+services:
+  django:
+    build:
+      context: ./harmonization
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./harmonization:/app
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - django
+
