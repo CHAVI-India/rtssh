@@ -1,21 +1,14 @@
-
-
 version: '3'
+
 services:
-  django:
-    build:
-      context: ./harmonization
-      dockerfile: Dockerfile
+  web:
+    image: sougatamaity/harmonization:latest
+    container_name: harmonization_container
     ports:
       - "8000:8000"
-    volumes:
-      - ./harmonization:/app
-  nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
-    ports:
-      - "80:80"
-    depends_on:
-      - django
+    volumes: 
+      - harmonization:/app
+    restart: always
 
+volumes:
+  harmonization:
