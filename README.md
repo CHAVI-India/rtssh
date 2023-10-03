@@ -1,0 +1,2 @@
+# Welcome
+This is a github repository for the open source software - NAAM - Normalizing Application for Accurate Mapping of RadioTherapy Structures. As the name indicates the software allows us to ensure that structure set names in DICOM RT structure sets are uniform and adhere to a set of standards. Please see the documentation wiki on how to use the software. We welcome your inputs after using the system. 
